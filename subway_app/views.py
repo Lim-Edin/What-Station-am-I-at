@@ -4,4 +4,4 @@ from .models import Posting
 
 def subway(request):
     posts = Posting.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+    return render(request, 'subway_app/subway.html', {'posts': posts})
