@@ -13,10 +13,10 @@ class App extends Component {
         <div className="content-wrapper">
           <ul>
             <li><NavLink exact to="/">홈으로</NavLink></li>
-            <li><NavLink to="/moim">열차 리스트</NavLink></li>
+            <li><NavLink to="/subway_app">열차 리스트</NavLink></li>
           </ul>
         <Switch>
-          <Route exact path="/moim" component={SubwayList}/>
+          <Route exact path="/subway_app" component={SubwayList}/>
           <Route exact path="/" component={Home}/>
         </Switch>
       </div>
