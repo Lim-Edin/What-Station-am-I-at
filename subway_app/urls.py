@@ -5,5 +5,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('', views.subway, name='subway'),
-    path('/select', views.select, name='select')
+    path('select', views.select, name='select')
 ]

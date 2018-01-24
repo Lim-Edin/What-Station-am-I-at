@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Posting
+from .models import Subway
 
-admin.site.register(Posting)
+admin.site.register(Subway)
