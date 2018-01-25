@@ -26,7 +26,6 @@ SECRET_KEY = 'b(^_p1pmo7(a0#-dezyzj$ekh5#^_p4v6$a3z!&&d$y5uc5m-p'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -61,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'subway.urls'
+ROOT_URLCONF = 'subway_app.urls'
 
 TEMPLATES = [
     {
