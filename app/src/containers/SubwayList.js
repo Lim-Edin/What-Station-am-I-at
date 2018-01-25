@@ -5,7 +5,7 @@ import { fetchSubway } from '../actions/index';
 
 class SubwayList extends Component {
   componentDidMount() {
-    this.props.fetchSubway();
+    this.props.fetchSubway(); //이 액션으로 api로부터 데이터를 GET
   }
 
   renderSubway () {
@@ -19,7 +19,7 @@ class SubwayList extends Component {
       <div>
         <h2>열차 리스트</h2>
         <ul>
-          {this.renderSubway()}
+            { alert("열차리스트") }
         </ul>
       </div>
     );
@@ -28,6 +28,6 @@ class SubwayList extends Component {
 
 export default connect((state) => {
   return {
-    subwayList: state.lists.subwayList
+    subwayList: state.lists.subwayList // GET한 데이터를 subwayList에 저장
   };
 }, { fetchSubway })(SubwayList);

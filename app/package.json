@@ -20,9 +20,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+
   "proxy": {
     "/subway_app": {
-      "target": "http://localhost:8000"
+      "target": "http://localhost:8000/"
     }
   },
   "devDependencies": {
